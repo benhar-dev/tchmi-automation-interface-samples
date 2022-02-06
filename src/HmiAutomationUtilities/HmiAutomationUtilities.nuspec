@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Beckhoff.TwinCAT.HMI.Automation</id>
+    <version>$version$</version>
+    <title>TwinCAT HMI Automation Interface Utilities</title>
+    <authors>Beckhoff Automation GmbH &amp; Co. KG</authors>
+    <owners>Beckhoff Automation GmbH &amp; Co. KG</owners>
+    
+    <projectUrl>https://www.beckhoff.com/TwinCAT-HMI</projectUrl>
+    <license type="expression">MIT</license>
+    <icon>images/tchmi.png</icon>
+
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TwinCAT HMI Automation Interface Utilities</description>
+    <releaseNotes>None</releaseNotes>
+    <copyright>Beckhoff Automation GmbH &amp; Co. KG</copyright>
+    <tags>TwinCAT HMI Automation</tags>
+    <dependencies>
+      <group targetFramework="net47">
+        <dependency id="stdole" version="7.0.3303" />
+        <dependency id="EnvDTE80" version="8.0.3" />
+        <dependency id="Microsoft.TeamFoundationServer.ExtendedClient" version="16.153.0" />
+        <dependency id="Microsoft.VisualStudio.SDK.EmbedInteropTypes" version="15.0.27" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\Beckhoff.*.dll" target="lib\net47\" />
+    <file src="bin\Debug\Bckhoff.*.pdb" target="lib\net47\" />
+    <!--
+    <file src="tools\**\*.*" exclude="**\*.log" />
+    -->
+    <file src="images\tchmi.png" target="images\" />
+  </files>
+</package>
